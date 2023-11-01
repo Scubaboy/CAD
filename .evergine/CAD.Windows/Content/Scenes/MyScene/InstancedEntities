@@ -70,8 +70,8 @@ Items:
         TAU: 1.10000002
         TagFilter: null
         UsePhysicalParameters: false
-      - !CAD.Components.Behaviours.MouseObjectSelectionBehaviour,CAD
-        Id: 56b6bab7-6246-4fd0-ba6c-39c7b0f8018d
+      - !CAD.Components.Behaviours.MouseBehaviour,CAD
+        Id: 6d423aab-012d-45de-85ca-de8ed18345f6
         IsEnabled: true
         UpdateOrder: 0.5
     Children: []
@@ -129,10 +129,14 @@ Items:
       - !Evergine.Framework.Graphics.SunComponent,Evergine.Framework
         Id: 6f2b70f3-a505-49a6-9454-130b04d48cd3
         IsEnabled: true
-      - !CAD.Components.Behaviours.MouseObjectSelectionBehaviour,CAD
-        Id: 5d74e620-9634-4a5e-8092-b38570b95b62
+      - !Evergine.Framework.ErrorComponent,Evergine.Framework
+        Id: 1a4be2ba-02d9-4fb4-a6d5-aeb7564d4549
         IsEnabled: true
-        UpdateOrder: 0.5
+        OldType: '!CAD.Components.Behaviours.MouseObjectSelectionBehaviour,CAD'
+        Properties:
+          Id: 5d74e620-9634-4a5e-8092-b38570b95b62
+          IsEnabled: true
+          UpdateOrder: 0.5
     Children: []
     Id: 3f7df33e-e1b9-411e-9601-362975b0c871
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
@@ -161,7 +165,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 43117c33-4f3b-4955-a201-caa63f26a78e
+        Material: 81793d1d-395c-486b-9e4f-dcf2f8a4c882
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
