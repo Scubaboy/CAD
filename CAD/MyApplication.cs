@@ -1,3 +1,4 @@
+using CAD.Services;
 using Evergine.Framework;
 using Evergine.Framework.Services;
 using Evergine.Framework.Threading;
@@ -20,6 +21,7 @@ namespace CAD
             this.Container.Register<AssetsService>();
             this.Container.Register<ForegroundTaskSchedulerService>();
             this.Container.Register<WorkActionScheduler>();
+            this.Container.Register<MouseButtonService>();
         }
 
         public override void Initialize()
