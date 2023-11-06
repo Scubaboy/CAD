@@ -165,7 +165,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 81793d1d-395c-486b-9e4f-dcf2f8a4c882
+        Material: 30b5a61c-e6d5-41e0-8f1e-7b055945e318
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
@@ -201,6 +201,34 @@ Items:
         UpdateOrder: 0.5
     Children: []
     Id: 6a094fea-e84d-4cbc-bb6e-60ccc60b5693
+  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+    Name: DesignElementsUI
+    Tag: null
+    IsEnabled: true
+    IsStatic: false
+    Components:
+      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+        Id: 66afdfac-ff6a-47e0-aae2-0b857ac8bd56
+        IsEnabled: true
+        LocalOrientation:
+          W: 1.0
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        LocalPosition:
+          X: 2.65878391
+          Y: 1.51930499
+          Z: 5.96046448E-07
+        LocalScale:
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+      - !CAD.Components.Behaviours.UI.DesignElementsUIBehaviour,CAD
+        Id: f1d634f9-0648-4f4c-af81-9912bb51498e
+        IsEnabled: true
+        UpdateOrder: 0.5
+    Children: []
+    Id: 7bce6ec3-731f-4f76-abf6-6c603ac04fa5
 Managers:
   - !Evergine.Framework.Managers.AssetSceneManager,Evergine.Framework
     Id: 4ae9964a-5a8a-463f-b714-050389b3b68c

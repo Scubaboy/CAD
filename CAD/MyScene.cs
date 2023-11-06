@@ -1,9 +1,5 @@
-using Evergine.Common.Graphics;
-using Evergine.Components.Graphics3D;
 using Evergine.Framework;
-using Evergine.Framework.Graphics;
-using Evergine.Framework.Services;
-using Evergine.Mathematics;
+using Evergine.UI;
 
 namespace CAD
 {
@@ -14,7 +10,13 @@ namespace CAD
             base.RegisterManagers();
             
             this.Managers.AddManager(new global::Evergine.Bullet.BulletPhysicManager3D());
-            
+            this.Managers.AddManager(new ImGuiManager()
+            {
+                ImGuizmoEnabled = true,
+                ImPlotEnabled = true,
+                ImNodesEnabled = true,
+            });
+
         }
 
         protected override void CreateScene()
